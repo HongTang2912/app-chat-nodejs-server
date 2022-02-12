@@ -39,7 +39,7 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.PORT, () => {
+server.listen(process.env.NODE_ENV, () => {
   console.log("SERVER RUNNING");
   //console.log(server);
 });
