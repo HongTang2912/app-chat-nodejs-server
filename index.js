@@ -12,7 +12,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "app-chat-nodejs-client.herokuapp.com",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
